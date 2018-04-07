@@ -1,0 +1,169 @@
+#index{
+    background-color: tomato;
+    background: url(../pics/Gradient.png);
+}
+
+.piclink{
+    width: 970px;
+    height: 250px;
+    position: relative;
+    margin: 10px;
+    transition: 0.5s ease-in;
+}
+
+.piclink:hover{
+    width: 1080px;
+    height: 278px;
+    z-index: auto;
+    transition: 0.5s ease-out;
+}
+
+.centered{
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-style: oblique;
+    font-size: 18px;
+    line-height: normal;
+}
+div.centered{
+    height: 600px;
+}
+
+ul{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+table, th, td{
+    width: 37.5%;
+    border: 1px solid red;
+    border-collapse: collapse;
+    border-radius: 1px;
+    font: 12px Courier;
+}
+tr:nth-child(even){
+    background-color: #ff0000;
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: white;
+    color: black;
+}
+#noNum{
+    float: right;
+    list-style-type: none;
+}
+
+#mcat{
+    background: url(../pics/monstercat_logo_cat_large.png) no-repeat center top;
+    background-size: 720px 982px;
+    color: #a0a0a0;
+}
+#ninten{
+    background: #ff0000 url(../pics/Nintendo-Switch-Reveal-01-1280x720.jpg) no-repeat top right;
+}
+div.centered p{
+    position: absolute;
+}
+#mid{
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+form{
+    float: left;
+}
+h1{
+    display: block;
+}
+#back{
+    display: inline;
+    position: relative;
+}
+
+.backMcat{
+    background-color: white;
+    border: none;
+    color: #a0a0a0;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-stuff {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#dropdown:hover #dropdown-stuff {
+    display: block;
+}
+
+#dropdownNin {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdownNin-stuff {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#dropdownNin:hover #dropdownNin-stuff {
+    display: block;
+}
+
+.backNinten {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#lifetime{
+    width:  37.5%;
+    /* float: right; */
+}
+
+#ninten div p{
+    font-size: 20px;
+    color: white;
+    float: right;
+    text-align: justify;
+}
+
+#firstSong{
+    color: #414141;
+}
+
+@media screen and (min-width: 0px) and (max-width: 960px) {
+    #mcat{background-size: 500px 682px; background-attachment: fixed;}
+    #noNum{float: none}
+    #mid{float: initial}
+    .piclink{width: 500px; height: 128px;}
+    .piclink:hover{width:600px; height:154px;}
+    #container{float: initial;}
+    #ninten{background-position: left;}
+    div.centered{height: 350px;}
+}

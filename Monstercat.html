@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Why I love Monstercat!</title>
+    <script src="js/main.js"></script>
+</head>
+<body id="mcat">
+    <div id='dropdown'>
+        <button onclick="GOBACKGOBACKK()" class="backMcat">Home!</button><br>
+        <div id='dropdown-stuff'>
+                <button onclick="GoNintendo()" class="backMcat">Nintendo!</button><br>
+        </div>
+    </div>
+    <div id="noNum">
+    <h1>Top 10 Monstercat Song (2017)</h1>
+        <ol id="songs">
+            <li ><a href="#" data-song="C:\Users\dzach\Documents\Uwi\2017-2018\Semester 2\Info 2602\Assignment 1\audio\Kayzo & Slander - Holy (feat. Micah Martin).mp3" onclick="ChangeSongs();return false;">Kayzo & Slander - Holy (feat. Micah Martin)</a></li>
+            <li ><a href="#" data-song="C:\Users\dzach\Documents\Uwi\2017-2018\Semester 2\Info 2602\Assignment 1\audio\Slips & Slurs - Moving Hectic (feat. Harry Shotta).mp3" onclick="ChangeSongs();return false;">Slips & Slurs - Moving Hectic (feat. Harry Shotta)</a></li>
+            <li ><a href="#" data-song="C:\Users\dzach\Documents\Uwi\2017-2018\Semester 2\Info 2602\Assignment 1\audio\Rogue, Stonebank & Slips & Slurs - Unity.mp3" onclick="ChangeSongs();return false;">Rogue, Stonebank & Slips & Slurs - Unity</a></li>
+            <li ><a href="#" data-song="C:\Users\dzach\Documents\Uwi\2017-2018\Semester 2\Info 2602\Assignment 1\audio\INTERCOM - Decoy World (feat. Park Avenue).mp3" onclick="ChangeSongs();return false;">INTERCOM - Decoy World (feat. Park Avenue)</a></li>
+            <li ><a href="#" data-song="C:\Users\dzach\Documents\Uwi\2017-2018\Semester 2\Info 2602\Assignment 1\audio\Summer Was Fun - Love Back On (feat. Emelie Cyréus).mp3" onclick="ChangeSongs();return false;">Summer Was Fun - Love Back On (feat. Emelie Cyréus)</a></li>
+            <li ><a href="#" data-song="C:\Users\dzach\Documents\Uwi\2017-2018\Semester 2\Info 2602\Assignment 1\audio\Grant, Anevo & Conro - Without You (feat. Victoria Zaro).mp3" onclick="ChangeSongs();return false;">Grant, Anevo & Conro - Without You (feat. Victoria Zaro)</a></li>
+            <li ><a href="#" data-song="C:\Users\dzach\Documents\Uwi\2017-2018\Semester 2\Info 2602\Assignment 1\audio\Gammer - Stay Tonight (feat. Dylan Matthew).mp3" onclick="ChangeSongs();return false;">Gammer - Stay Tonight (feat. Dylan Matthew)</a></li>
+            <li ><a href="#" data-song="C:\Users\dzach\Documents\Uwi\2017-2018\Semester 2\Info 2602\Assignment 1\audio\Dirtyphonics & Sullivan King - Sight of Your Soul.mp3" onclick="ChangeSongs();return false;">Dirtyphonics & Sullivan King - Sight of Your Soul</a></li>
+            <li ><a href="#" data-song="C:\Users\dzach\Documents\Uwi\2017-2018\Semester 2\Info 2602\Assignment 1\audio\Kuuro - Doji.mp3" onclick="ChangeSongs();return false;">Kuuro - Doji</a></li>
+            <li ><a href="#" data-song="C:\Users\dzach\Documents\Uwi\2017-2018\Semester 2\Info 2602\Assignment 1\audio\Ephixa & Bossfight - Subside.mp3" onclick="ChangeSongs();return false;">Ephixa & Bossfight - Subside</a></li>
+        </ol> 
+    </div>
+    
+    <p id="mid">
+        While waiting for new Eminem Music, in April 2013 I went around youtube trying to find new music.
+        I stumbled up <a href="https://www.youtube.com/watch?v=pSvn0rp0kz0" id="firstSong" target="_blank">Adventure Time by Rogue </a> which led to me following the Monstercat channel religiously.
+        Ever since then, I've have followed and supported them and EDM which has now become my favourite genre of EDM!
+    </p>
+    <form onsubmit="loginfo()" method="post" action="loginfo()">
+        Sign up for the Monstercat Website here!<br>
+        <input type="text" name="FullName" placeholder="Full Name"> <br> 
+        <input type="email" name="EmailAddress" id="mail" data-email="myEmailS" placeholder="Email Address"><br>   
+        <input type="password" name="PassWord" id="pass" placeholder="Password"><br>         
+        <input type="number" name="numSongs" id="numSongs" placeholder="Number of Songs liked"><br>
+        <input type="date" name="DOB" id="DoB" placeholder="Date of Birth"><br><br>
+
+        Search for something here: 
+        <input type="search" name="find" id="find" placeholder="Search Here"><br><br>
+
+        Which song is your favourite from the top 10? <br>
+        Select a song from the right/top to listen. <br>
+        <select name="fav" id="sel">
+            <option value="Holy">Kayzo & Slander - Holy (feat. Micah Martin)</option>
+            <option value="Moving Hectic">Slips & Slurs - Moving Hectic (feat. Harry Shotta)</option>
+            <option value="Unity">Rogue, Stonebank & Slips & Slurs - Unity</option>
+            <option value="Decoy World">INTERCOM - Decoy World (feat. Park Avenue)</option>
+            <option value="Love Back On">Summer Was Fun - Love Back On (feat. Emelie Cyréus)</option>
+            <option value="Without You">Grant, Anevo & Conro - Without You (feat. Victoria Zaro)</option>
+            <option value="Stay Tonight">Gammer - Stay Tonight (feat. Dylan Matthew)</option>
+            <option value="Sight of Your Soul">Dirtyphonics & Sullivan King - Sight of Your Soul</option>
+            <option value="Doji">Kuuro - Doji</option>
+            <option value="Subside">Ephixa & Bossfight - Subside</option>
+        </select><br>
+        <audio controls id="mcatMusic">
+                <source id="mcatMusicSrc" src="audio/Kayzo & Slander - Holy (feat. Micah Martin).mp3"> 
+                Damn you're not gonna hear my phat beats :/
+        </audio><br><br>
+        <textarea name="thoughts" id="type" cols="30" rows="10">
+Enter your thoughts on Monstercat here
+        </textarea><br>
+        <br>
+        <input type="submit" value="Submit!" id="backMcat">
+    </form>
+</body>
+</html>
